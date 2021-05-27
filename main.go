@@ -25,7 +25,7 @@ type STUDENT_INFO struct {
 
 func connect() {
 
-	dsn := "host=localhost user=admin password=secret dbname=School port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+	dsn := "host=database user=admin password=secret dbname=database_name port=5432 sslmode=disable TimeZone=Asia/Shanghai"
 	d, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
